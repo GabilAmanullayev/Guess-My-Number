@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* Removes default margins */
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f8f9fa;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px;
+    gap: 30px;
+    background-color: #0056b3;
+    border-radius: 20px;
+}
+
+.game-header {
+    h3 {
+        color: #212529;
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #ffffff;
+        ;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+.game-content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* General styling for all input elements */
+input {
+    padding: 15px;
+    /* Adds space inside the input field */
+    width: 15%;
+    /* Sets the width to 100% of its parent container */
+    max-width: 300px;
+    /* Sets a maximum width for better responsiveness */
+    border-radius: 10px;
+    /* Rounds the corners of the input field */
+    border: 1px solid #ccc;
+    /* Adds a light gray border */
+    font-size: 16px;
+    /* Sets the font size inside the input field */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+    margin: 10px 0;
+    /* Adds vertical spacing around the input field */
+    outline: none;
+    /* Removes default focus outline */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    background-color: #007bff;
+    /* Primary blue */
+    color: #ffffff;
+    /* White text */
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;/
+}
+
+.restart {
+    background-color: red;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.restart:hover {
+    background-color: rgb(180, 9, 9);
+    /* Darker blue on hover */
+}
+
+/* Button active state (optional) */
+button:active {
+    background-color: #004085;
+    /* Even darker blue when button is pressed */
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Optional shadow effect */
+}
+
+/* Hide spinner for Chrome, Safari, and Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    /* Chrome, Safari */
+    margin: 0;
+    /* Remove margin */
+}
+
+/* Optional: Focus state styling for input elements */
+input:focus {
+    border-color: #007BFF;
+    /* Changes border color on focus */
+    box-shadow: 0px 2px 4px rgba(0, 123, 255, 0.5);
+    /* Adjusts shadow on focus */
+}
+
+.result-message {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-1,
+.result-2 {
+    font-size: 20px;
+    color: #ffffff;
+  
+}
